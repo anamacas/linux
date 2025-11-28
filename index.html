@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guia de Comandos Linux — Prof. Deive da Silva Melo</title>
+
+    <style>
+        /* ======== ESTILOS GERAIS ======== */
+        body {
+            margin: 0;
+            font-family: "Inter", Arial, sans-serif;
+            background: #f2f3f7;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a3d, #4e00c2);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: 800;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            opacity: 0.85;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 0;
+        }
+
+        /* ======== CARDS ======== */
+        .card {
+            background: #fff;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #4e00c2;
+            font-weight: 700;
+        }
+
+        h3 {
+            color: #222;
+            margin-bottom: 8px;
+        }
+
+        code {
+            background: #ececff;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-weight: bold;
+            color: #4e00c2;
+        }
+
+        ul {
+            line-height: 1.7;
+        }
+
+        /* ======== IMAGENS ======== */
+        .img-example {
+            width: 100%;
+            max-width: 700px;
+            margin: 15px 0;
+
+            /* FUNDO + BORDA */
+            background: #f8f8ff;
+            padding: 12px;
+            border: 3px solid #9191e7;
+            border-radius: 12px;
+
+            /* SOMBRA */
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+
+            /* Suavidade */
+            transition: 0.3s;
+        }
+
+        .img-example:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+        }
+
+        footer {
+            text-align: center;
+            background: #1a1a3d;
+            color: #fff;
+            padding: 25px;
+            margin-top: 40px;
+            font-size: 1em;
+            border-top: 2px solid #330000;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Guia de Comandos Linux</h1>
+        <p>Material desenvolvido para a disciplina PW1 — Prof. Deive da Silva Melo</p>
+    </header>
+
+    <div class="container">
+
+        <!-- NOVO CARD — AGORA É O PRIMEIRO -->
+        <section class="card">
+            <h2>1. O que é Linux, quem desenvolveu e suas distribuições?</h2>
+
+            <h3>O que é Linux?</h3>
+            <p>Linux é um sistema operacional gratuito, rápido e seguro, usado em computadores, servidores e celulares Android.</p>
+
+            <h3>Quem criou?</h3>
+            <p>O Linux foi criado por <strong>Linus Torvalds</strong> em 1991.</p>
+
+            <h3>Principais distribuições:</h3>
+            <ul>
+                <li>Ubuntu</li>
+                <li>Debian</li>
+                <li>Fedora</li>
+                <li>Linux Mint</li>
+                <li>Arch Linux</li>
+            </ul>
+
+            <!-- IMAGEM REAL DO GOOGLE -->
+            <img src="img/linux.jpg"  class="img-example">
+        </section>
+
+        <!-- CARD 1 ANTIGO → AGORA É O 2 -->
+        <section class="card">
+            <h2>2. Histórico de Comandos</h2>
+
+            <h3>O que é o histórico no terminal?</h3>
+            <p>É a lista de comandos anteriormente utilizados pelo usuário.</p>
+
+            <h3>Como visualizar?</h3>
+            <p>Use o comando: <code>history</code></p>
+
+            <img src="img/img 1.jpg" class="img-example">
+
+            <h3>Como reutilizar?</h3>
+            <ul>
+                <li><strong>↑</strong> seta para cima — comandos anteriores</li>
+                <li><strong>↓</strong> seta para baixo — comandos mais recentes</li>
+            </ul>
+        </section>
+
+        <!-- CARD 2 -->
+        <section class="card">
+            <h2>3. TAB Completion</h2>
+
+            <h3>O que é autocompletar?</h3>
+            <p>Ajuda a completar comandos ou nomes de arquivos automaticamente.</p>
+
+            <h3>Como usar?</h3>
+            <p>Pressione <strong>TAB</strong> ao começar a digitar um comando.</p>
+
+            <img src="img/img 2.jpg" class="img-example">
+        </section>
+
+        <!-- CARD 3 -->
+        <section class="card">
+            <h2>4. Comando <code>man</code></h2>
+
+            <h3>Para que serve?</h3>
+            <p>Abre o manual explicando em detalhes o uso de cada comando.</p>
+
+            <h3>Como acessar?</h3>
+            <p><code>man nome-do-comando</code></p>
+
+            <img src="img/img 3.png" class="img-example">
+
+            <h3>Man pages</h3>
+            <p>São as páginas do manual organizadas por seções.</p>
+        </section>
+
+        <!-- CARD 4 -->
+        <section class="card">
+            <h2>5. Comando <code>shutdown</code></h2>
+
+            <h3>Para que serve?</h3>
+            <p>Desligar ou reiniciar o sistema.</p>
+
+            <h3>Exemplos:</h3>
+            <ul>
+                <li><code>shutdown now</code> — desliga imediatamente</li>
+                <li><code>shutdown -r</code> — reinicia o sistema</li>
+                <li><code>shutdown +5</code> — desliga em 5 minutos</li>
+            </ul>
+
+            <img src="img/img 4.jpg" class="img-example">
+        </section>
+
+        <!-- CARD 5 – COMANDOS GERAIS -->
+        <section class="card">
+            <h2>6. Comandos Essenciais do Linux</h2>
+
+            <img src="img/img 5.png" class="img-example">
+
+            <ul>
+                <li><code>pwd</code> — mostra o diretório atual</li>
+                <li><code>ls</code> — lista arquivos e diretórios</li>
+                <li><strong>Curingas:</strong> <code>*</code> e <code>?</code></li>
+                <li><code>cd</code> — navega pelos diretórios</li>
+                <li><code>mkdir</code> — cria um diretório</li>
+                <li><code>rmdir</code> — remove diretório vazio</li>
+                <li><code>touch</code> — cria arquivos</li>
+                <li><code>cat</code> — exibe conteúdo</li>
+                <li><code>cp</code> — copia arquivos</li>
+                <li><code>mv</code> — move ou renomeia</li>
+                <li><code>rm</code> — remove arquivos</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2025 — Página desenvolvida por Ana Clara Araujo (PW1)
+    </footer>
+
+</body>
+
+</html>
+
